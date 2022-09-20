@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://gocheethaserver.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://gocheethaserver.mycompany.com/">
+
+<xs:element name="addVehicle" type="tns:addVehicle"/>
+
+<xs:element name="addVehicleResponse" type="tns:addVehicleResponse"/>
+
+<xs:element name="deleteDriver" type="tns:deleteDriver"/>
+
+<xs:element name="deleteDriverResponse" type="tns:deleteDriverResponse"/>
+
+<xs:element name="deleteVehicle" type="tns:deleteVehicle"/>
+
+<xs:element name="deleteVehicleResponse" type="tns:deleteVehicleResponse"/>
+
+<xs:element name="getSales" type="tns:getSales"/>
+
+<xs:element name="getSalesResponse" type="tns:getSalesResponse"/>
+
+<xs:element name="loginAdmin" type="tns:loginAdmin"/>
+
+<xs:element name="loginAdminResponse" type="tns:loginAdminResponse"/>
+
+<xs:element name="registerDriver" type="tns:registerDriver"/>
+
+<xs:element name="registerDriverResponse" type="tns:registerDriverResponse"/>
+
+<xs:element name="updateDriver" type="tns:updateDriver"/>
+
+<xs:element name="updateDriverResponse" type="tns:updateDriverResponse"/>
+
+<xs:element name="updateVehicle" type="tns:updateVehicle"/>
+
+<xs:element name="updateVehicleResponse" type="tns:updateVehicleResponse"/>
+
+<xs:complexType name="deleteVehicle">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateDriver">
+<xs:sequence>
+<xs:element name="driver" type="tns:drivers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="drivers">
+<xs:sequence>
+<xs:element name="age" type="xs:string" minOccurs="0"/>
+<xs:element name="branch" type="xs:string" minOccurs="0"/>
+<xs:element name="feedbacks" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="isValidate" type="xs:boolean"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="phone" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateVehicle">
+<xs:sequence>
+<xs:element name="driver" type="tns:vehicle" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vehicle">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+<xs:element name="vno" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDriver">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addVehicle">
+<xs:sequence>
+<xs:element name="driver" type="tns:vehicle" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addVehicleResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSales">
+<xs:sequence>
+<xs:element name="branch" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSalesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:salesDetails" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="salesDetails">
+<xs:sequence>
+<xs:element name="branch" type="xs:string" minOccurs="0"/>
+<xs:element name="pick" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerDriver">
+<xs:sequence>
+<xs:element name="driver" type="tns:drivers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerDriverResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginAdmin">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginAdminResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:admin" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="admin">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="isvalid" type="xs:boolean"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+<xs:element name="phone" type="xs:string" minOccurs="0"/>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

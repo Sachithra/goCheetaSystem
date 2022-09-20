@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:25977/GoCheethaServer/CustomerService?wsdl" uri="wsdl/localhost_25977/GoCheethaServer/CustomerService.wsdl"/>
+    <system systemId="http://localhost:25977/GoCheethaServer/CustomerService?xsd=1" uri="wsdl/localhost_25977/GoCheethaServer/CustomerService.xsd_1.xsd"/>
+    <system systemId="http://localhost:25977/GoCheethaServer/DriversService?wsdl" uri="wsdl/localhost_25977/GoCheethaServer/DriversService.wsdl"/>
+    <system systemId="http://localhost:25977/GoCheethaServer/DriversService?xsd=1" uri="wsdl/localhost_25977/GoCheethaServer/DriversService.xsd_1.xsd"/>
+    <system systemId="http://localhost:25977/GoCheethaServer/AdminService?wsdl" uri="wsdl/localhost_25977/GoCheethaServer/AdminService.wsdl"/>
+    <system systemId="http://localhost:25977/GoCheethaServer/AdminService?xsd=1" uri="wsdl/localhost_25977/GoCheethaServer/AdminService.xsd_1.xsd"/>
+</catalog>

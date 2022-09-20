@@ -1,0 +1,117 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 20, 2022, 3:50:09 PM
+    Author     : User
+*/
+
+*{
+   
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    outline:none;border: none;
+    text-decoration:none;
+    transition:all .2s linear;
+}
+*::selection{
+   
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    background: white;
+}
+.btnB{
+    display: inline-block;
+    margin-top: 1rem;
+    background: yellow;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btnB:hover{
+    background:black;
+    color: white;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 9%;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: #222;
+    color: #fff;
+    border-radius:.5rem;
+    padding: .2rem 1rem;
+}
+.heading span.space{
+    background:none;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact .row .image{
+    flex: 1 1 35rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.contact .row  form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.contact .row  form .inputBox input, .contact .row  form textarea {
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #f7f7f7;
+    transform: none;
+}
+.contact .row  form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+.btnB{
+    display: inline-block;
+    margin-top: 1rem;
+    background: yellow;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btnB:hover{
+    background:black;
+    color: white;
+}
